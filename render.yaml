@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: compressor-xp
+    env: python
+    buildCommand: ""
+    startCommand: "python compressor.py"
