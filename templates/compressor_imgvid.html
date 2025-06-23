@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Compressor of Images and Videos</title>
+  <style>
+    body { background: #1a237e; color: #fff; font-family: Tahoma, Arial, sans-serif; text-align: center; }
+    .window { background: #e3e9f7; color: #222; border-radius: 8px; margin: 40px auto; width: 350px; padding: 24px; }
+    .btn { background: #3a6ea5; color: #fff; border: none; padding: 8px 18px; border-radius: 4px; font-size: 1em; cursor: pointer; }
+    .btn:hover { background: #2c4a7a; }
+    input[type="file"] { margin: 12px 0; }
+  </style>
+</head>
+<body>
+  <div class="window">
+    <h2>Compressor de Imagens e Vídeos</h2>
+    <form action="/compress" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" accept="image/png, image/jpeg, video/mp4" required><br>
+      <button class="btn" type="submit">Compress</button>
+    </form>
+    <p style="font-size:0.9em;color:#444;margin-top:16px;">
+      Optimize JPG, PNG or MP4 without lose visibility quality.<br>
+      <b>Observation:</b> For videos, the bitrate is reduzed to compress.
+    </p>
+  </div>
+</body>
+</html>

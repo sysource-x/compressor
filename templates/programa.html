@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo.png" />
   <title>Compressor XP</title>
   <style>
     body {
@@ -64,11 +65,14 @@
   <div class="window">
     <div class="title-bar">Compressor XP</div>
     <form action="/compress" method="post" enctype="multipart/form-data">
-      <label for="filesInput">Selecione arquivos para comprimir:</label><br>
-      <input type="file" id="filesInput" name="files" multiple required title="Selecione arquivos para comprimir"><br>
-      <button class="btn" type="submit">Comprimir</button>
+      <label for="filesInput">Select the files to compress:</label><br>
+      <input type="file" id="filesInput" name="files" multiple required title="Select the files to compress"><br>
+      <button class="btn" type="submit">Compress</button>
     </form>
-    <p class="info-text">Compatível com todos os tipos de arquivos.<br>Sem perda de qualidade.</p>
+    <p class="info-text">Compatibility with all types of files<br>Without loss of quality</p>
   </div>
+  <footer class="info-text">
+    <p>© 2023 Compressor XP. All rights reserved.</p>
+    <p>Developed by <a href="https://www.youtube.com/@sysource-xyz" target="_blank" style="color: #3a6ea5; text-decoration: none;">sysource-xyz</a></p>
 </body>
 </html>
